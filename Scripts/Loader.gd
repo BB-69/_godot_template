@@ -43,6 +43,7 @@ func fade_out(node: Variant, duration: float = 0.5):
 
 var change_scene_index = 0
 func change_scene(set_scene:String, duration:float = 0.5, fades:Array = [true, true], has_load_icon:bool = true):
+	if Stat.loading: return
 	var scene_path = scene[set_scene]
 	Stat.set_loading(true)
 	
@@ -63,5 +64,6 @@ func change_scene(set_scene:String, duration:float = 0.5, fades:Array = [true, t
 		fade_in(loading_icon, duration/2.0 if fades[1] == true else 0)
 		await get_tree().create_timer(duration/2.0).timeout
 	fade_in(fade_rect, duration if fades[1] == true else 0)
+	await get_tree().create_timer(duration).timeout
 	
 	Stat.set_loading(false)

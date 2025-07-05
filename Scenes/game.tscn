@@ -17,6 +17,9 @@ font_size = 48
 [node name="Game" type="Node2D"]
 script = ExtResource("1_wowpa")
 
+[node name="Camera2D" type="Camera2D" parent="."]
+anchor_mode = 0
+
 [node name="BG" parent="." instance=ExtResource("3_i6g32")]
 bg_texture = SubResource("GradientTexture1D_i6g32")
 

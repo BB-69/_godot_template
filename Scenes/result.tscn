@@ -23,6 +23,9 @@ font_size = 40
 script = ExtResource("1_dj5nj")
 final_score_label = NodePath("UI/HUD/FinalScoreLabel")
 
+[node name="Camera2D" type="Camera2D" parent="."]
+anchor_mode = 0
+
 [node name="BG" parent="." instance=ExtResource("3_knq36")]
 bg_texture = SubResource("GradientTexture1D_knq36")
 

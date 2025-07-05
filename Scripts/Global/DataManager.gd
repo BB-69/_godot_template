@@ -22,7 +22,7 @@ func load_data():
 		)
 		var data = file.get_var()
 		file.close()
-		log.p("Loaded data: %s" % data)
+		log.p("Loaded Data: %s" % data)
 		return data
 	else:
 		log.p("No saved file yet...")
