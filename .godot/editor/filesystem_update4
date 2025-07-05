@@ -7,3 +7,4 @@ res://Scenes/audio_manager.tscn
 res://Scenes/particle_manager.tscn
 res://Scripts/Global/DataManager.gd
 res://Scripts/Loader.gd
+res://Scripts/Background.gd

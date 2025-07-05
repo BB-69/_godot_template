@@ -10,13 +10,13 @@ var log = Logger.new("BG")
 var bgs:Dictionary = {}
 
 func _ready():
-	var bgloaded:bool = _loadbg()
-	if !bgloaded: return
-	
 	if bg_texture:
 		tex_rect.texture = bg_texture
 	else:
 		set_bg_color(Color(0.5,0.5,0.5))
+	
+	var bgloaded:bool = _loadbg()
+	if !bgloaded: return
 
 func _loadbg() -> bool:
 	var folder_path = "res://Assets/BG/"
