@@ -1,0 +1,23 @@
+[gd_scene load_steps=4 format=3 uid="uid://diycjygkrmvam"]
+
+[ext_resource type="Script" uid="uid://c3th4osnkamn4" path="res://Scripts/Audio.gd" id="1_4tj6f"]
+[ext_resource type="Script" uid="uid://d0o81f3xm1lvy" path="res://Scripts/AudioControl.gd" id="2_hhwve"]
+[ext_resource type="AudioStream" uid="uid://6khynjgs85yl" path="res://Assets/Audio/Sfx/silence-5-seconds.mp3" id="3_hhwve"]
+
+[node name="AudioManager" type="Node2D" node_paths=PackedStringArray("audc")]
+script = ExtResource("1_4tj6f")
+audc = NodePath("AudioController")
+
+[node name="AudioController" type="Node" parent="."]
+script = ExtResource("2_hhwve")
+
+[node name="Continuous" type="Node2D" parent="."]
+
+[node name="empty_cont" type="AudioStreamPlayer2D" parent="Continuous"]
+stream = ExtResource("3_hhwve")
+parameters/looping = true
+
+[node name="Oneshot" type="Node2D" parent="."]
+
+[node name="empty" type="AudioStreamPlayer2D" parent="Oneshot"]
+stream = ExtResource("3_hhwve")

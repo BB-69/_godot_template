@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://gbqojhfb8i0w"]
+
+[ext_resource type="Script" uid="uid://dvbjkl31ryikk" path="res://Scripts/Particle.gd" id="1_0o7ve"]
+[ext_resource type="Script" uid="uid://byrk2kp1moah1" path="res://Scripts/ParticleControl.gd" id="2_r62m1"]
+
+[node name="ParticleManager" type="Node2D"]
+script = ExtResource("1_0o7ve")
+
+[node name="ParticleController" type="Node" parent="."]
+script = ExtResource("2_r62m1")
+
+[node name="Continuous" type="Node2D" parent="."]
+
+[node name="Oneshot" type="Node2D" parent="."]

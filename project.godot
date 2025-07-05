@@ -1,0 +1,30 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=5
+
+[application]
+
+config/name="_Template"
+run/main_scene="uid://cb5sed3gscbhk"
+config/features=PackedStringArray("4.4", "GL Compatibility")
+config/icon="res://icon.svg"
+
+[autoload]
+
+Stat="*res://Scripts/Global/Statistics.gd"
+Data="*res://Scripts/Global/DataManager.gd"
+Loader="*res://Scenes/loader.tscn"
+Aud="*res://Scenes/audio_manager.tscn"
+Ptc="*res://Scenes/particle_manager.tscn"
+
+[rendering]
+
+renderer/rendering_method="gl_compatibility"
+renderer/rendering_method.mobile="gl_compatibility"
+environment/defaults/default_clear_color=Color(0, 0, 0, 1)
