@@ -27,6 +27,10 @@ Ptc="*res://Scenes/particle_manager.tscn"
 
 window/stretch/mode="canvas_items"
 
+[gui]
+
+theme/custom_font="uid://c7c3oji68e0i5"
+
 [rendering]
 
 renderer/rendering_method="gl_compatibility"

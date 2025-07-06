@@ -1,10 +1,7 @@
-res://Scenes/loader.tscn
 res://Scenes/main.tscn
 res://Scenes/game.tscn
 res://Scenes/result.tscn
+res://Scenes/loader.tscn
 res://Scenes/bg.tscn
 res://Scenes/audio_manager.tscn
 res://Scenes/particle_manager.tscn
-res://Scripts/Global/DataManager.gd
-res://Scripts/Loader.gd
-res://Scripts/Background.gd
